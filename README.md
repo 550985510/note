@@ -1,13 +1,13 @@
-#common Git command
+# common Git command
 =====================
  
-###专有名词译名
+### 专有名词译名
 *Workspace：工作区
 *Index / Stage：暂存区
 *Repository：仓库区（或本地仓库）
 *Remote：远程仓库
  
-###一、新建代码库 
+### 一、新建代码库 
 * 在当前目录新建一个Git代码库
 * git init
  
@@ -17,8 +17,8 @@
 * 下载一个项目和它的整个代码历史
 * git clone [url]
  
-###二、配置
-####Git的设置文件为.gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。
+### 二、配置
+#### Git的设置文件为.gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。
 * 显示当前的Git配置
 * git config --list
  
@@ -29,7 +29,7 @@
 * git config [--global] user.name "[name]"
 * git config [--global] user.email "[email address]"
  
-###三、增加/删除文件
+### 三、增加/删除文件
 * 添加指定文件到暂存区
 * git add [file1] [file2] ...
  
@@ -48,7 +48,7 @@
 * 改名文件，并且将这个改名放入暂存区
 * git mv [file-original] [file-renamed]
 
-###四、代码提交
+### 四、代码提交
 * 提交暂存区到仓库区
 * git commit -m [message]
  
@@ -68,7 +68,7 @@
 * 重做上一次commit，并包括指定文件的新变化
 * git commit --amend [file1] [file2] ...
  
-###五、分支
+### 五、分支
 * 列出所有本地分支
 * git branch
  
@@ -109,7 +109,7 @@
 * git push origin --delete [branch-name]
 * git branch -dr [remote/branch]
  
-###六、标签
+### 六、标签
 * 列出所有tag
 * git tag
  
@@ -131,7 +131,7 @@
 * 新建一个分支，指向某个tag
 * git checkout -b [branch] [tag]
  
-###七、查看信息
+### 七、查看信息
 * 显示有变更的文件
 * git status
  
@@ -175,7 +175,7 @@
 * 显示当前分支的最近几次提交
 * git reflog
 
-###八、远程同步
+### 八、远程同步
 * 下载远程仓库的所有变动
 * git fetch [remote]
  
@@ -200,7 +200,7 @@
 * 推送所有分支到远程仓库
 * git push [remote] --all
 
-###九、撤销
+### 九、撤销
 * 恢复暂存区的指定文件到工作区
 * git checkout [file]
  
@@ -229,7 +229,7 @@
 * 后者的所有变化都将被前者抵消，并且应用到当前分支
 * git revert [commit]
 
-###十、其他
+### 十、其他
 
 * 生成一个可供发布的压缩包
 * git archive
