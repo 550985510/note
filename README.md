@@ -8,7 +8,7 @@
  
 ### 开发规则
 * 所有的新功能开发，bug修复（非紧急）都要从develop分支拉取新的分支进行开发，开发完成自测没有问题再合并到develop分支
-* release分支发布到测试环境，由开发人员创建release分支（需要测试人员提出需求）并发布到测试环境，如果测试过程中发现bug，需要开发人员track到该* * release分支修复bug，上线前需要测试人员提交merge request到master分支，准备上线，同时需要合并回develop分支。
+* release分支发布到测试环境，由开发人员创建release分支（需要测试人员提出需求）并发布到测试环境，如果测试过程中发现bug，需要开发人员track到该release分支修复bug，上线前需要测试人员提交merge request到master分支，准备上线，同时需要合并回develop分支。
 * 只有紧急情况下才允许从master上拉取hotfix分支，hotfix分支需要最终同时合并到develop和master分支（共两次merge操作）
 * 除了master和develop分支，其它分支在开发完成后都要删除
  
